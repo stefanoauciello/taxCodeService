@@ -20,7 +20,7 @@ function removeSpecialChar(input: string): string {
 }
 
 function removeSpace(input: string): string {
-    return input.replace(/\s/g, '');
+    return input.replaceAll(' ', '');
 }
 
 function removeVocal(input: string): string {

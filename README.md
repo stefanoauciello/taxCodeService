@@ -28,7 +28,9 @@ Installation Required:
 - NPM
 
 1) "git clone https://github.com/stefanoauciello/taxCodeService.git"
-2) "npm i" in cloned folder
+2) "npm i" in cloned folder to install dependencies
 5) "npm run compile-and-start" in cloned folder to build and start application
 
 In "postman-collection" folder you may find the collection of API-REST calls that you may use with the backend.
+
+Launch `npm run test` to run unit test.

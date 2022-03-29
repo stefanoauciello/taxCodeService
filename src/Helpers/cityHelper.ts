@@ -9,6 +9,8 @@ const logger = log4js.getLogger();
 logger.level = "all";
 
 function getPlaceCode(birthPlace: string): string {
+
+    birthPlace = birthPlace.toUpperCase();
     birthPlace = removeSpecialChar(birthPlace);
 
     const filePath = path.join(__dirname, '../../cities.json')

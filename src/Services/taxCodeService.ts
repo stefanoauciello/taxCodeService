@@ -52,6 +52,8 @@ function decodeTax(tax: string) {
         throw new TaxServiceError(400, 'Invalid code: it should be a string of 16 characters');
     }
 
+    tax = tax.toUpperCase();
+
     logger.info('Decoding code : ' + tax);
 
     let gender = 'M';

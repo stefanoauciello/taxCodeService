@@ -1,6 +1,9 @@
 import {getVocal, removeSpace, removeSpecialChar, removeVocal, substituteXWithVocals} from "../Utils/utils";
 
 function getName(name: string): string {
+
+    name = name.toUpperCase();
+
     const oldName = String(name);
     const vocals = getVocal(oldName);
 

@@ -1,6 +1,9 @@
 import {getVocal, removeSpace, removeSpecialChar, removeVocal, substituteXWithVocals} from "../Utils/utils";
 
 function getSurname(surname: string): string {
+
+    surname = surname.toUpperCase();
+
     const oldSurname = String(surname);
     const vocals = getVocal(oldSurname);
 
