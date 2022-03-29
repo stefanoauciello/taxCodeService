@@ -1,0 +1,26 @@
+{
+  "name": "tax_code_service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-ts-node": "ts-node src/index.ts",
+    "compile-and-start": "rimraf ./dist && npx tsc && node dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "log4js": "^6.4.4"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "eslint": "^8.12.0",
+    "eslint-plugin-react": "^7.29.4",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
+}

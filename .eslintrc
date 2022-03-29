@@ -1,0 +1,37 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1 // prettier
+      }
+    ],
+    "prettier/prettier": 0,
+    "no-cond-assign": [
+      "error",
+      "except-parens"
+    ],
+    "no-empty": 0,
+    "no-nested-ternary": 0,
+    "no-param-reassign": 0,
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "no-underscore-dangle": 0,
+    "import/no-named-as-default": 0, // conditional loader
+    "import/no-named-as-default-member": 0, // conditional loader
+    "object-curly-spacing": ["error", "always"],
+    "array-bracket-spacing": ["error", "always"],
+    "comma-spacing": [2, {"before": false, "after": true}],
+    "semi": [2, "always"]
+  }
+}
