@@ -16,7 +16,7 @@ In POST endpoint body like this is required:
   "surname": "ROSSI",
   "name": "MARCO",
   "birthPlace": "MILANO",
-  "dateOfBirth": "27-03-67",
+  "birthDate": "27-03-67",
   "gender": "M"
 }
 ```

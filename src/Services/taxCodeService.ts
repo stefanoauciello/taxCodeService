@@ -7,6 +7,7 @@ import {getNumberMonth, hasNumber, isNumber} from "../Utils/utils";
 import {TaxServiceError} from "../Errors/taxServiceError";
 
 import log4js from "log4js";
+import { Person } from "../Models/person";
 
 const logger = log4js.getLogger();
 logger.level = "all";
@@ -102,17 +103,13 @@ function decodeTax(tax: string) {
         throw new TaxServiceError(400, 'Invalid Control Code');
     }
 
-    const obj = {
-        surname,
-        name,
-        birthDate: days + '-' + month + '-' + birthYear,
-        gender,
-        birthPlaceName
-    }
+    const birthDate = days + '-' + month + '-' + birthYear;
 
-    logger.info("Decoded Information " + JSON.stringify(obj));
+    const person = new Person(surname, name, birthPlaceName, birthDate, gender);
 
-    return obj;
+    logger.info("Decoded Information " + JSON.stringify(person));
+
+    return person;
 }
 
 export {createTaxCode, decodeTax}
