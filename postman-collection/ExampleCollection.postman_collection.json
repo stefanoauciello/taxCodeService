@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "9371067e-b426-434b-83bd-4c33fa1caf51",
+		"name": "ExampleCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/tax-code/RSSMRC67C27F205Z",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"surname\": \"ROSSI\",\r\n    \"name\": \"MARCO\",\r\n    \"birthPlace\": \"MILANO\",\r\n    \"dateOfBirth\": \"27-03-67\",\r\n    \"gender\": \"M\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tax-code",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tax-code"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/tax-code/RSSMRC67C27F205Z",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tax-code/RSSMRC67C27F205Z",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tax-code",
+						"RSSMRC67C27F205Z"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
