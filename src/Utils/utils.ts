@@ -412,7 +412,7 @@ function convertRemainderToChar(char: number): string {
   }
 }
 
-function substituteXWithVocals(vocals, label) {
+function substituteXWithVocals(vocals: string | null, label: string): string {
   if (vocals && label.includes('X')) {
     const count = label.split('').filter(x => x === 'X').length;
     if (count === 3) {
